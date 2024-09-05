@@ -3,19 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Counter Using HTML</title>
-    <link rel="stylesheet" href="srinu.css">
+    <title>NASA Picture of the Day</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="counter-container">
-        <p>Your current count is: <span id="count">0</span></p>
-        <p id="error" class="error-message">Error: Cannot go below 0</p>
-        <div class="buttons">
-            <button id="decrement">Decrement</button>
-            <button id="increment">Increment</button>
-            <button id="clear">Clear</button>
+    <h1>NASA Picture of the Day</h1>
+
+    <!-- Form for selecting a date -->
+    <form id="search-form">
+        <label for="search-input">Select a Date:</label>
+        <input type="date" id="search-input" required>
+        <button type="submit">Get Image</button>
+    </form>
+
+    <!-- Section to display current image of the day -->
+    <section id="current-image-container">
+        <h2>Image of the Day</h2>
+        <div id="image-content">
+            <!-- Image and data will be populated here -->
         </div>
-    </div>
-    <script src="srinu.js"></script>
+    </section>
+
+    <!-- Unordered list to display search history -->
+    <section>
+        <h3>Search History</h3>
+        <ul id="search-history">
+            <!-- Past searches will be listed here -->
+        </ul>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>

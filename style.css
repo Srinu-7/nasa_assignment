@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+#search-form {
+    margin: 20px 0;
+}
+
+#search-form input {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+#search-form button {
+    padding: 10px 20px;
+}
+
+#current-image-container {
+    margin: 20px 0;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#search-history {
+    list-style-type: none;
+    padding: 0;
+}
+
+#search-history li {
+    cursor: pointer;
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #e4e4e4;
+    border-radius: 5px;
+}
+
+#search-history li:hover {
+    background-color: #d4d4d4;
+}
